@@ -90,7 +90,7 @@ devToolsProject.run(
       },
     )
   },
-  cleanup: { data -->
+  cleanup: { data ->
     data.venv?.cleanup()
   },
 )
