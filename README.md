@@ -13,8 +13,8 @@ somewhere on your hard drive. Pipenv is required to set up `groovylint`, but not
 it. After running `pipenv sync`, you can run the `fetch_jars.py` script:
 
 ```bash
-$ pipenv run fetch_jars --codenarc 1.2.1 --gmetrics 1.0 --slf4j 1.7.25 \
-  --output-dir ./resources
+$ pipenv run fetch_jars --codenarc-version 1.2.1 --gmetrics-version 1.0 --slf4j-version 1.7.25 \
+  -o ./resources
 ```
 
 The version numbers used by `groovylint`'s Docker container can be found in the
@@ -23,7 +23,7 @@ Python 3.6 or greater:
 
 ```bash
 $ /path/to/groovylint/run_codenarc.py --home /path/to/groovylint/resources \
-  --codenarc 1.2.1 --gmetrics 1.0 --slf4j 1.7.25 \
+  --codenarc-version 1.2.1 --gmetrics-version 1.0 --slf4j-version 1.7.25 \
   -- -includes="./Jenkinsfile,**/*.groovy,**/*.gradle"
 ```
 
